@@ -1,0 +1,7 @@
+DELETE FROM SystemEvents
+WHERE
+SystemEvents.ReceivedAt
+BETWEEN
+'2019-02-01 00:00:00'
+AND
+'2019-03-01 00:00:00';
