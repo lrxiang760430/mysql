@@ -1,0 +1,11 @@
+当出现如下提示时
+client does not support authentication protocol requested by server;consider upgrading MySql client
+可以这样操作来解决
+mysql> use mysql;
+Database changed
+
+mysql> alter user 'lrx'@'%' identified with mysql_native_password by 'W***!'
+    -> ;
+Query OK, 0 rows affected (0.21 sec)
+mysql> flush privileges;
+Query OK, 0 rows affected (0.81 sec)
