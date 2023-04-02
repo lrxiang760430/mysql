@@ -1,0 +1,3 @@
+SELECT *,conv(20230402b.eci,16,10) AS eci10
+FROM 
+20230402b
